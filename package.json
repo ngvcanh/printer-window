@@ -1,0 +1,29 @@
+{
+  "name": "printer-window",
+  "version": "0.0.1",
+  "description": "Create Printer Window with ElectronJS",
+  "main": "src/main.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node ."
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ngvcanh/printer-window.git"
+  },
+  "keywords": [
+    "printer",
+    "window",
+    "electron",
+    "pos-printer"
+  ],
+  "author": "Ken Nguyen",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ngvcanh/printer-window/issues"
+  },
+  "homepage": "https://github.com/ngvcanh/printer-window#readme",
+  "devDependencies": {
+    "electron": "^10.1.3"
+  }
+}
