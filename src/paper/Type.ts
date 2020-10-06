@@ -1,0 +1,19 @@
+export enum Type{
+  A9 = 'a9',
+  A8 = 'a8',
+  A7 = 'a7',
+  A6 = 'a6',
+  A5 = 'a5',
+  A4 = 'a4',
+  A3 = 'a3',
+  HALFLETTER = 'half-letter',
+  LETTER = 'letter',
+  JUNIORLEGAL = 'junior-legal',
+  LEGAL = 'legal',
+  LEDGER = 'ledger',
+  POSHANDHELD = 'pos-handheld',
+  POSSTANDARD = 'pos-standard',
+  POSTHERMAL = 'pos-thermal',
+  TABLOID = 'tabloid',
+  WINDOW = 'window'
+}

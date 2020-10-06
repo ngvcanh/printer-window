@@ -1,0 +1,19 @@
+export enum Size{
+  A9 = '37mmx52mm',
+  A8 = '52mmx74mm',
+  A7 = '74mmx105mm',
+  A6 = '105mmx148mm',
+  A5 = '148mmx210mm',
+  A4 = '210mmx297mm',
+  A3 = '297mmx420mm',
+  HALFLETTER = '140mmx216mm',
+  LETTER = '216mmx279mm',
+  JUNIORLEGAL = '127mmx203mm',
+  LEGAL = '216mmx356mm',
+  LEDGER = '432mmx279mm',
+  POSHANDHELD = '57mmx50mm',
+  POSSTANDARD = '80mmx80mm',
+  POSTHERMAL = '57mmx50mm',
+  TABLOID = '279mmx432mm',
+  WINDOW = ''
+}

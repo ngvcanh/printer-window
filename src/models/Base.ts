@@ -1,6 +1,6 @@
 import { PrinterWindowTable } from './Tables';
-import * as ALIGN from '../Align';
-import * as VERTICAL from '../Vertical';
+import { Align } from '../Align';
+import { Vertical } from '../Vertical';
 import { isValue } from '../helper';
 
 export class BaseModel{
@@ -9,9 +9,9 @@ export class BaseModel{
 
   private _value: string|object = '';
 
-  private _align: string = ALIGN.LEFT;
+  private _align: string = Align.LEFT;
 
-  private _vertical: string = VERTICAL.TOP;
+  private _vertical: string = Vertical.TOP;
 
   private _width: string = '';
 
@@ -35,12 +35,12 @@ export class BaseModel{
   }
 
   public align(align: string){
-    Object.keys(ALIGN).map(key => ALIGN[key] === align && (this._align = align));
+    Object.keys(Align).map(key => Align[key] === align && (this._align = align));
     return this;
   }
 
   public vertical(vertical: string){
-    Object.keys(VERTICAL).map(key => VERTICAL[key] === vertical && (this._vertical = vertical));
+    Object.keys(Vertical).map(key => Vertical[key] === vertical && (this._vertical = vertical));
     return this;
   }
 

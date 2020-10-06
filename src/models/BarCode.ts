@@ -1,6 +1,6 @@
 import { BaseModel } from './Base';
-import { LEFT } from '../Align';
-import { BARCODE } from './Type';
+import { Align } from '../Align';
+import { TYPE } from './Type';
 
 export class PrinterWindowBarCodeModel extends BaseModel{
 
@@ -11,7 +11,7 @@ export class PrinterWindowBarCodeModel extends BaseModel{
 
   constructor(value: string){
     super(value);
-    this.align(LEFT)._type = BARCODE;
+    this.align(Align.LEFT)._type = TYPE.BARCODE;
   }
 
 }

@@ -1,13 +1,7 @@
-const TEXT = 'text';
-const IMAGE = 'image';
-const BARCODE = 'barcode';
-const QRCODE = 'qrcode';
-const TABLE = 'table';
-
-export {
-  TEXT,
-  IMAGE,
-  BARCODE,
-  QRCODE,
-  TABLE
-};
+export enum TYPE{
+  TEXT = 'text',
+  IMAGE = 'image',
+  BARCODE = 'barcode',
+  QRCODE = 'qrcode',
+  TABLE = 'table'
+}

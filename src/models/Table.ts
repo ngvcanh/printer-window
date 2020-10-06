@@ -1,6 +1,6 @@
 import { BaseModel } from './Base';
-import { LEFT } from '../Align';
-import { TABLE } from './Type';
+import { Align } from '../Align';
+import { TYPE } from './Type';
 
 export class PrinterWindowTableModel extends BaseModel{
 
@@ -11,7 +11,7 @@ export class PrinterWindowTableModel extends BaseModel{
 
   constructor(body: any[][]){
     super();
-    this.align(LEFT).body(body)._type = TABLE;
+    this.align(Align.LEFT).body(body)._type = TYPE.TABLE;
   }
 
 }

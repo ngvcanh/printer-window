@@ -1,5 +1,5 @@
-const TOP = 'top';
-const MIDDLE = 'middle';
-const BOTTOM = 'bottom';
-
-export { TOP, MIDDLE, BOTTOM };
+export enum Vertical{
+  TOP = 'top',
+  MIDDLE = 'middle',
+  BOTTOM = 'bottom'
+}

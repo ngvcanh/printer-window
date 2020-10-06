@@ -3,7 +3,7 @@ import { PrinterWindowImageModel } from './Image';
 import { PrinterWindowBarCodeModel } from './BarCode';
 import { PrinterWindowQRCodeModel } from './QRCode';
 import { PrinterWindowTableModel } from './Table';
-import * as TYPE from './Type';
+import { TYPE } from './Type';
 
 export { TYPE };
 

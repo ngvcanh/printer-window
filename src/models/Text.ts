@@ -1,6 +1,6 @@
 import { BaseModel } from './Base';
-import { LEFT } from '../Align';
-import { TEXT } from './Type';
+import { Align } from '../Align';
+import { TYPE } from './Type';
 
 export class PrinterWindowTextModel extends BaseModel{
 
@@ -11,7 +11,7 @@ export class PrinterWindowTextModel extends BaseModel{
 
   constructor(value: string){
     super(value);
-    this.align(LEFT)._type = TEXT;
+    this.align(Align.LEFT)._type = TYPE.TEXT;
   }
 
 }

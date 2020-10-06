@@ -1,6 +1,6 @@
 import { BaseModel } from './Base';
-import { LEFT } from '../Align';
-import { IMAGE } from './Type';
+import { Align } from '../Align';
+import { TYPE } from './Type';
 
 export class PrinterWindowImageModel extends BaseModel{
 
@@ -11,7 +11,7 @@ export class PrinterWindowImageModel extends BaseModel{
 
   constructor(filepath: string){
     super(filepath);
-    this.align(LEFT)._type = IMAGE;
+    this.align(Align.LEFT)._type = TYPE.IMAGE;
   }
 
 }

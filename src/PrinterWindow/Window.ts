@@ -1,3 +1,4 @@
+import { defaultOptions } from "./DefaultOption";
 import { PrinterWindowEvents, PrinterWindowEvent } from "./Events";
 import { PrinterWindowOptions } from "./Options";
 
@@ -7,7 +8,7 @@ export class PrinterWindow{
 
   options: PrinterWindowOptions;
 
-  constructor(options: object = {}){
+  constructor(options: object = defaultOptions){
     this.events = new PrinterWindowEvents;
     this.options = new PrinterWindowOptions(options);
   }
