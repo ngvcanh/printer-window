@@ -2,7 +2,7 @@
   "name": "printer-window",
   "version": "0.0.1",
   "description": "Create Printer Window with ElectronJS",
-  "main": "src/main.js",
+  "main": "src/index.ts",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
     "start": "node ."
@@ -26,4 +26,5 @@
   "devDependencies": {
     "electron": "^10.1.3"
   }
+
 }
