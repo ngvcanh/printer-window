@@ -3,7 +3,7 @@ import { Align } from '../Align';
 import { Vertical } from '../Vertical';
 import { isValue } from '../helper';
 
-export class BaseModel{
+export class PrinterWindowBaseModel{
 
   protected _type: string = '';
 

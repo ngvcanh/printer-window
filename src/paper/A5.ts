@@ -1,7 +1,8 @@
-import { PaperBase } from './Base';
+import { PrinterWindowPaperBase } from './Base';
+import { Size } from './Constant';
 
-export class PaperA5 extends PaperBase{
+export class PrinterWindowPaperA5 extends PrinterWindowPaperBase{
 
-  
+  protected _size = Size.A5;
 
 }

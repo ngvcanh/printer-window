@@ -1,8 +1,8 @@
-import { BaseModel } from './Base';
+import { PrinterWindowBaseModel } from './Base';
 import { Align } from '../Align';
 import { TYPE } from './Type';
 
-export class PrinterWindowTableModel extends BaseModel{
+export class PrinterWindowTableModel extends PrinterWindowBaseModel{
 
   protected props = [
     'type', 'value', 'align', 'width', 
