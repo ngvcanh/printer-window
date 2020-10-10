@@ -1,6 +1,6 @@
 import { PrinterWindowEvent } from "./Event";
 import { EventNames } from './Name';
-import { isFunction } from '../../helper';
+import { isFunction } from '../helper';
 
 export { PrinterWindowEvent, EventNames };
 
