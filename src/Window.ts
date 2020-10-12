@@ -1,16 +1,39 @@
-import { defaultOptions } from "./DefaultOption";
+import { BrowserWindow } from 'electron';
+import { OptionsDefault } from "./OptionsDefault";
 import { PrinterWindowEvents, PrinterWindowEvent } from "./Events";
 import { PrinterWindowOptions } from "./Options";
 
 export class PrinterWindow{
 
-  events: PrinterWindowEvents;
+  private events: PrinterWindowEvents;
 
-  options: PrinterWindowOptions;
+  private options: PrinterWindowOptions;
 
-  constructor(options: object = defaultOptions){
+  private window;
+
+  private readonly timePrintLine: number = 400;
+
+  private readonly timePrintDelay: number = 200;
+
+  private cloneOptionDefault(){
+    return JSON.parse(JSON.stringify(OptionsDefault));
+  }
+
+  private setOptions(options){
+    Object.assign(this.options, options);
+    return this;
+  }
+
+  private createWindow(){
+    this.window = new BrowserWindow({
+      
+    });
+  }
+
+  constructor(options?: PrinterWindowOptions){
     this.events = new PrinterWindowEvents;
-    this.options = new PrinterWindowOptions(options);
+    this.options = this.cloneOptionDefault();
+    this.setOptions(options);
   }
 
   public on(eventName: string, callback?: Function){
@@ -18,10 +41,8 @@ export class PrinterWindow{
     return this;
   }
 
-  public create(options: object = {}){
-    let currentOptions = this.options.get();
-    Object.assign(currentOptions, { ...options });
-    this.options = new PrinterWindowOptions(currentOptions);
+  public create(options?: object){
+    this.setOptions(options).createWindow();
   }
 
 }

@@ -1,5 +1,5 @@
 import * as helper from './helper';
-import * as models from './models';
+import * as Models from './Models';
 import * as Paper from './Paper';
 import { Align } from './Align';
 import { Vertical } from './Vertical';
@@ -8,7 +8,7 @@ import { PrinterWindow as Window } from './Window';
 
 export {
   helper,
-  models,
+  Models,
   Paper,
   Events,
   Align,

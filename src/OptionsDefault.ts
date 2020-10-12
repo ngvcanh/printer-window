@@ -1,7 +1,4 @@
-const defaultOptions = {
-  pageSize: '',
-  width: 0,
-  height: 0,
+const OptionsDefault = {
   silent: false,
   preview: true,
   deviceName: '',
@@ -12,4 +9,4 @@ const defaultOptions = {
   copies: 1
 };
 
-export { defaultOptions };
+export { OptionsDefault };
